@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
-import Router from 'react';
+// import  PortfolioContainer from "./components/PortfolioContainer";
+import { Navbar } from "./components/Navbar";
+import { About } from './pages/About';
 function App() {
   return (
-
-    <Router>
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    </Router>
+    <>
+    <Navbar />
+    <About />
+    
+    </>
   );
 }
 
