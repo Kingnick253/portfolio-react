@@ -3,12 +3,14 @@ import './App.css';
 // import  PortfolioContainer from "./components/PortfolioContainer";
 import { Navbar } from "./components/Navbar";
 import { About } from './pages/About';
+import { Portfolio } from './pages/Portfolio';
 function App() {
   return (
     <>
     <Navbar />
     <div className='container mx-auto'>
     <About />
+    <Portfolio />
     </div>
     </>
   );

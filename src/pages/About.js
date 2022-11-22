@@ -8,7 +8,7 @@ export const About = () =>{
                 <p> Hello and welcome to my Portfolio. My name is Nicholas Webb, and I am currently a student at University of Washington's Full Stack coding bookcamp. </p>
             </div>
             <div className=" flex-1">
-                <img className="object-contain h-auto w-96" src={profilePic} alt="p"/>
+                <img className="object-contain h-auto w-96" src={profilePic} alt="picture of me with the glissing off my skin"/>
             </div>
         </div>
     );
