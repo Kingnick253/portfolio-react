@@ -14,7 +14,7 @@
   - [Questions](#questions)
     
 ## Installation
-  For installation you have the choice to clone this repo or use the [live link](). If you choose to clone 
+  For installation you have the choice to clone this repo or use the [live link](https://kingnick253.github.io/portfolio-react/). If you choose to clone 
     
     
 ## Usage
