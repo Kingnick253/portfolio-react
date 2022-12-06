@@ -7,12 +7,14 @@ import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { Portfolio } from './pages/Portfolio';
 import { Resume } from './pages/Resume';
+import { Skills } from './pages/Skills';
 function App() {
   return (
     <>
     <Navbar />
     <div className='container mx-auto'>
     <About />
+    <Skills />
     <Portfolio />
     <Resume />
     <Contact />

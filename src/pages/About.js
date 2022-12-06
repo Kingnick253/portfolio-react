@@ -1,5 +1,5 @@
 import profilePic from "../Assets/profile-picture.jpg"
-import data from "../components/iconData";
+
 
 export const About = () =>{
     return(
@@ -12,15 +12,7 @@ export const About = () =>{
                     <h1 className="font-bold text-3xl mb-2">About me</h1>
                     <p> Hello and welcome to my Portfolio. My name is Nicholas Webb, and I am currently a student at University of Washington's Full Stack coding bookcamp. </p>
                 </div>
-                
-                {data.map(({id,icon}) => (
-                <div key={id}  className="my-5 flex justify-center flex-wrap gap-4">
-                   
-                    
-                        {icon ? <img className="w-16" src = {icon} alt="Different icon logos for each language"/>:null }
-                  
-                </div>
-                ))}
+              
             </div>
         </div>
         
