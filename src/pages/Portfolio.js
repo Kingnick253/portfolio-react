@@ -3,9 +3,9 @@ import data from "../components/ProjectData";
 console.log(data);
 export const Portfolio = () => {
     return(
-        <div className=" grid grid-cols-2 gap-4" id = "portfolio" >
-            {data.map(({id, title,image, description, repo, live}) => (
-                <div key={id} className ="p-4 bg-gray-300">
+        <div className=" grid grid-cols-2 gap-4 " id = "portfolio" >
+            {data.map(({id, title,image, repo, live}) => (
+                <div key={id} className ="p-4 bg-gray-300 h-md rounded-lg">
                     <h1 className="font-bold">{title}</h1>
                     {image ? <img src = {image} />: null}
                     <div>

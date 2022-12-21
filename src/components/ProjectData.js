@@ -2,7 +2,7 @@ import BookMachine  from "../Assets/bookmachine2.jpg";
 import NoteTaker from "../Assets/takeMyNotes.png";
 import PassG from "../Assets/PassGen.jpg";
 import Groove from "../Assets/Groove.jpg";
-import PaperBoy from "../Assets/Mailman.webp";
+import PaperBoy from "../Assets/paperboy.png";
 import DailyP from "../Assets/Dailyplanner.jpg";
 const data = [
     {
