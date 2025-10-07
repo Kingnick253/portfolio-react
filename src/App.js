@@ -10,17 +10,17 @@ import { Resume } from './pages/Resume';
 import { Skills } from './pages/Skills';
 function App() {
   return (
-    <>
-    <Navbar />
-    <div className='container mx-auto'>
-    <About />
-    <Skills />
-    <Portfolio />
-    <Resume />
-    <Contact />
+    <div className="min-h-screen">
+      <Navbar />
+      <main>
+        <About />
+        <Skills />
+        <Portfolio />
+        <Resume />
+        <Contact />
+      </main>
+      <Footer />
     </div>
-    <Footer />
-    </>
   );
 }
 
