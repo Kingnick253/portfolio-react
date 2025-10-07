@@ -26,61 +26,69 @@ export const Contact = () => {
   // }
 
   return (
-    <div
-      className="p-5 shadow-xl flex justify-center "
-      style={{ minHeight: "25vh" }}
-      id="contact"
-    >
-      <form
-        className="bg-gray-900 rounded-lg"
-        name="contact"
-        onSubmit={handleSubmit}
-      >
-        <h1 className="font-bold text-xl text-white text-center">Contact Me</h1>
-        <label className=" text-white" htmlFor="name">
-          Name
-        </label>
-        <div className=" text-black field col-12 col-md-10 mb-3 p-3">
-          <input
-            id="name"
-            type="text"
-            name="name"
-            placeholder="Name"
-            required="true"
-            onChange={(e) => setName(e.target.value)}
-          />
+    <section className="py-20 px-6" id="contact">
+      <div className="max-w-2xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-white mb-4">Get In Touch</h2>
+          <p className="text-xl text-gray-400">Let's work together on your next project</p>
         </div>
-        <label className="text-white " htmlFor="email">
-          Email
-        </label>
-        <div className="   text-black field col-12 col-md-10 mb-3 p-3">
-          <input
-            id="Email"
-            type="text"
-            name="Email"
-            placeholder="Leave your email please"
-            required="true"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-        <label className="text-white " htmlFor="message">
-          Message
-        </label>
-        <div className=" text-black field col-12 col-md-10 mb-3 p-3">
-          <textarea
-            id="message"
-            type="textarea"
-            rows="5"
-            name="message"
-            placeholder="Please leave me a message :)"
-            required="true"
-            onChange={(e) => setMessage(e.target.value)}
-          />
-        </div>
-        <button className="font-bold rounded-lg text-white hover:bg-slate-600 flex justify-center">
-          Submit
-        </button>
-      </form>
-    </div>
+        <form
+          className="bg-gray-800 rounded-2xl p-8 border border-gray-700"
+          name="contact"
+          onSubmit={handleSubmit}
+        >
+          <div className="space-y-6">
+            <div>
+              <label className="block text-sm font-medium text-gray-300 mb-2" htmlFor="name">
+                Name
+              </label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Your name"
+                required={true}
+                onChange={(e) => setName(e.target.value)}
+                className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-300 mb-2" htmlFor="email">
+                Email
+              </label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="your.email@example.com"
+                required={true}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-300 mb-2" htmlFor="message">
+                Message
+              </label>
+              <textarea
+                id="message"
+                rows="5"
+                name="message"
+                placeholder="Tell me about your project..."
+                required={true}
+                onChange={(e) => setMessage(e.target.value)}
+                className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+              />
+            </div>
+            <button 
+              type="submit"
+              className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
   );
 };
